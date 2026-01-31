@@ -270,10 +270,10 @@ a:hover{
 
 }
 
-@media (min-width: 230px) and (max-width:630){
+@media (min-width: 230px) and (max-width:599){
 
     .titulo>h1 {
-        font-size: 48px;
+        font-size: 24px;
     }
 
     .menu>h2 {
@@ -332,7 +332,10 @@ a:hover{
 
 
 
-@media (min-width: 668px) and (max-width: 999px) {
+@media (min-width: 600px) and (max-width: 1000px) {
+        .titulo>h1 {
+        font-size: 24px;
+    }
 
     nav{
         gap: 20px;
