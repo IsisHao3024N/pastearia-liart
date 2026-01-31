@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -37,21 +37,22 @@ nav {
     align-items: center;
 }
 
-nav>li{
-   list-style: none;
+nav>li {
+    list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-     list-style: none;
+    list-style: none;
     font-size: 26px;
     font-family: "Kalam", cursive;
     color: #FFE121;
-    cursor: pointer; 
-    
+    cursor: pointer;
+
 }
 
-a:hover{
-    border: 2px double #FFE121; 
+a:hover {
+    border: 2px double #FFE121;
     border-radius: 4px;
     padding: 6px;
 }
@@ -270,10 +271,14 @@ a:hover{
 
 }
 
-@media (min-width: 230px) and (max-width:699px){
+@media (min-width: 230px) and (max-width:699px) {
 
     .titulo>h1 {
-        font-size: 34px;
+        font-size: 48px;
+    }
+
+    a{
+        font-size: 21px;
     }
 
     .menu>h2 {
@@ -281,8 +286,8 @@ a:hover{
     }
 
     .cards-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
         gap: 25px;
         max-width: 1200px;
         margin: 0 auto;
@@ -333,11 +338,11 @@ a:hover{
 
 
 @media (min-width: 700px) and (max-width: 999px) {
-        .titulo>h1 {
+    .titulo>h1 {
         font-size: 34px;
     }
 
-    nav{
+    nav {
         gap: 20px;
     }
 
