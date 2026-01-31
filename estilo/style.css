@@ -274,8 +274,8 @@ a:hover {
 @media (min-width: 230px) and (max-width:699px) {
 
     .logo{
-         width: 50px;
-         height: 50px;
+         width: 20px;
+         height: 20px;
     }
 
     .titulo>h1 {
@@ -283,7 +283,7 @@ a:hover {
     }
 
     a{
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .menu>h2 {
