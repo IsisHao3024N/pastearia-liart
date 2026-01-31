@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media.css">
     <title>Pasdtelaria-Liart</title>
 </head>
 
@@ -12,32 +13,141 @@
     <section class="cabeca">
         <img src="assets/logo.png" alt="">
         <nav>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>Sobre nós</li>
-            <li>Contato</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#contat">Contato</a></li>
         </nav>
     </section>
-    <div class="titulo">
+    <div id="home" class="titulo">
         <h1>Bem-vindos à <br>Pastelaria Liart</h1>
     </div>
-    <section class="menu">
+    <section id="menu" class="menu">
         <h2>Pastel de Frango</h2>
 
-        <div class="cards-container"> <
+        <div class="cards-container">
             <div class="cart">
                 <img src="assets/Pastel-de-frango-com-catupiry-1.png" alt="Pastel de frango com catupiry">
                 <p>Frango com catupiry</p>
                 <p>R$13,00</p>
             </div>
             <div class="cart">
-                <img src="assets/frango-queijo.webp" alt="Pastel de frango com queijo"> 
+                <img src="assets/frango-queijo.webp" alt="Pastel de frango com queijo">
                 <p>Frango com queijo</p>
                 <p>R$13,00</p>
             </div>
-            
+            <div class="cart">
+                <img src="assets/frango-cheder.webp" alt="Pastel de frango com cheder">
+                <p>Frango com cheder</p>
+                <p>R$13,00</p>
+            </div>
+            <div class="cart">
+                <img src="assets/frango-catupiry-milho.jpg" alt="Pastel de frango com catupiry e milho">
+                <p>Frango com catupiry e milho</p>
+                <p>R$14,00</p>
+            </div>
+            <div class="cart">
+                <img src="assets/frango-queijo-bacon.jpeg" alt="Pastel de frango com queijo e bacon">
+                <p>Frango com queijo e bacon</p>
+                <p>R$14,00</p>
+            </div>
         </div>
     </section>
+    <section class="menu">
+        <h2>Pastel de carne</h2>
+        <div class="cards-container">
+            <div class="cart">
+                <img src="assets/Pastel-de-Carne.jpg" alt="Pastel de carne">
+                <p>carne</p>
+                <p>R$14,00</p>
+            </div>
+            <div class="cart">
+                <img src="assets/carne-queijo.jpeg" alt="Pastel de carne com queijo">
+                <p>carne com queijo</p>
+                <p>R$14,00</p>
+            </div>
+            <div class="cart">
+                <img src="assets/carne-cheddar.jpeg" alt="Pastel de carne com cheddar">
+                <p>carne com cheddar</p>
+                <p>R$14,00</p>
+            </div>
+            <div class="cart">
+                <img src="assets/carne-catupiry-milho.jpeg" alt="Pastel de carne com catupiry e milho">
+                <p>carne com catupiry e milho</p>
+                <p>R$14,00</p>
+            </div>
+            <div class="cart">
+                <img src="assets/Pastel-de-Carne-com-Ovos.jpg" alt="Pastel de carne com ovo">
+                <p>carne com ovo</p>
+                <p>R$14,00</p>
+            </div>
+            <div class="cart">
+                <img src="assets/Pastel_Carne_Seca.jpg" alt="Pastel de carne seca">
+                <p>carne seca</p>
+                <p>R$14,00</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="menu">
+        <h2>Pastel de Calabresa</h2>
+        <div class="cards-container">
+            <div class="cart">
+                <img src="assets/calabresa.jpeg" alt="Pastel de calabresa">
+                <p>calabresa</p>
+                <p>R$14,00</p>
+            </div>
+            <div class="cart">
+                <img src="assets/calabresa-queijo.jpeg" alt="Pastel de calabresa com queijo">
+                <p>calabresa com queijo</p>
+                <p>R$14,00</p>
+            </div>
+            <div class="cart">
+                <img src="assets/calabresa-ovo.jpg" alt="Pastel de calabresa com ovo">
+                <p>calabresa com ovo</p>
+                <p>R$14,00</p>
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <h2>Pastel de Presunto</h2>
+        <div class="cards-container">
+            <div class="cart">
+                <img src="assets/presunto-mussarela.jpeg" alt="Pastel de presunto com mussarela">
+                <p>presunto com mussarela</p>
+                <p>R$14,00</p>
+            </div>
+            <div class="cart">
+                <img src="assets/presunto-massarela-tomate.jpeg" alt="Pastel de presunto com mussarela e tomate">
+                <p>presunto com mussarela e tomate</p>
+                <p>R$14,00</p>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="sobre">
+        <h2>Sobre nós</h2>
+        <div class="sobre-texto">
+            <p>A Pastelaria Liart nasceu da paixão por criar pastéis artesanais, feitos com carinho, qualidade e muito
+                sabor. Trabalhamos com massa crocante, recheios generosos e ingredientes selecionados para oferecer
+                sempre uma experiência deliciosa.<br>
+                Mais do que servir pastéis, queremos proporcionar momentos simples e especiais para nossos clientes. Na
+                Liart, cada detalhe é pensado para que você se sinta em casa — do primeiro atendimento à última mordida.
+                Pastelaria Liart: tradição, sabor e amor em cada pastel.</p>
+        </div>
+    </section>
+<section id="contat" class="contato">
+    <div class="delivery">
+        <h2>Peça pelo nosso Delivery</h2>
+        <p class="delivery-text">(em Itapeva e região)</p>
+        <p class="numero">(35) 94862-9021</p>
+    </div>
+    <div class="contato-info">
+        <div class="endereco">
+            <h2>Venha nos ver</h2>
+            <p class="text-end">Estr. do Monjolinho - <br>Monjolinho, Itapeva - <br>MG, 37655-000</p>
+        </div>
+    </div>
+</section>
 </body>
 
 </html>

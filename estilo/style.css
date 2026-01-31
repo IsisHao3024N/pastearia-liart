@@ -6,11 +6,15 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(../assets/pateis.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
 
@@ -33,14 +37,24 @@ nav {
     align-items: center;
 }
 
-nav > li {
-    list-style: none;
+nav>li{
+   list-style: none;
+}
+a{
+    text-decoration: none;
+     list-style: none;
     font-size: 26px;
     font-family: "Kalam", cursive;
     color: #FFE121;
     cursor: pointer; 
+    
 }
 
+a:hover{
+    border: 2px double #FFE121; 
+    border-radius: 4px;
+    padding: 6px;
+}
 
 .titulo {
     display: flex;
@@ -49,10 +63,10 @@ nav > li {
     height: 100dvh;
     width: 100%;
     padding-left: 150px;
-    padding-top: 110px; 
+    padding-top: 110px;
 }
 
-.titulo > h1 {
+.titulo>h1 {
     color: #FFE121;
     font-size: 96px;
     font-family: "Kalam", cursive;
@@ -61,59 +75,69 @@ nav > li {
 }
 
 
+
+
 .menu {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    column-count: 3;
+    column-gap: 10px;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 100dvh;
     width: 100%;
     background-color: #FF0101;
     padding: 60px 40px;
 }
 
-.menu > h2 {
-    color: #FFE121;
+.menu>h2 {
+    color: #fff;
+    background-color: rgba(255, 225, 33, 0.50);
+    padding: 0 33px;
+    border-radius: 50px;
+    align-self: flex-start;
     font-family: "Kalam", cursive;
     font-size: 48px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 
 .cards-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 
 .cart {
-    background-color: #fff;
-    border-radius: 15px;
+    background-color: rgba(255, 225, 33, 0.50);
+    border-radius: 10px;
     padding: 20px;
     width: 250px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .cart:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .cart img {
     width: 100%;
     height: 180px;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
 .cart p {
     font-family: "Kalam", cursive;
-    color: #333;
-    font-size: 18px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
     margin: 5px 0;
 }
 
@@ -121,4 +145,127 @@ nav > li {
     color: #FF0101;
     font-weight: 700;
     font-size: 22px;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    width: 100%;
+    background-color: #FF0101;
+    padding: 60px 40px;
+}
+
+.sobre>h2 {
+    color: #fff;
+    background-color: rgba(255, 225, 33, 0.50);
+    padding: 0 33px;
+    border-radius: 50px;
+    align-self: flex-start;
+    font-family: "Kalam", cursive;
+    font-size: 48px;
+    margin-bottom: 80px;
+}
+
+.sobre-texto {
+    background-color: rgba(255, 225, 33, 0.50);
+    border-radius: 10px;
+    padding: 20px;
+    width: 1307px;
+    height: 505px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sobre-texto>p {
+    font-family: "Kalam", cursive;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 100px;
+    line-height: 50px;
+
+}
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100dvh;
+    background-color: #FF0101;
+    padding: 60px 40px;
+    box-sizing: border-box;
+}
+
+.delivery,
+.contato-info {
+    width: 517px;
+    height: 459px;
+    background-color: rgba(255, 225, 33, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.delivery>h2 {
+    padding-top: 28px;
+    font-size: 28px;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+.delivery-text {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Kalam", cursive;
+    text-align: center;
+    padding-bottom: 60px;
+
+}
+
+.numero {
+    cursor: pointer;
+    margin: auto;
+    font-family: "Kalam", cursive;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 13px;
+    background-color: rgba(255, 225, 33, 0.5);
+    border-radius: 20px;
+    width: 219px;
+    height: 60px;
+}
+
+.endereco>h2 {
+    padding-top: 28px;
+    font-size: 28px;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    text-align: center
+}
+
+.text-end {
+    cursor: pointer;
+    margin: 40px auto 0;
+    width: 420px;
+    height: 210px;
+    background-color: #FF0101;
+    border-radius: 10px;
+    font-size: 28px;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+
+
 }
