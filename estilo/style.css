@@ -270,7 +270,7 @@ a:hover{
 
 }
 
-@media (min-width: 230px) and (max-width:599){
+@media (min-width: 230px) and (max-width:699){
 
     .titulo>h1 {
         font-size: 24px;
@@ -332,7 +332,7 @@ a:hover{
 
 
 
-@media (min-width: 600px) and (max-width: 1000px) {
+@media (min-width: 700px) and (max-width: 999px) {
         .titulo>h1 {
         font-size: 24px;
     }
