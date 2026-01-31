@@ -1,4 +1,4 @@
-@media (max-width: 230px) {
+@media (min-width: 230px) and (max-width:530){
 
     .titulo>h1 {
         font-size: 48px;
